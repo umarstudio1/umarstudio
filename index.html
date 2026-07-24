@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h4>Umar</h4>
+            <h2>Studio</h2>
+        </div>
+        <div class="menu-btn" id="menu-btn">☰</div>
+
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Creative Solutions for Your Brand</h1>
+            <p>We craft stunning visual identities, video edits, and web experiences that bring your ideas to life.</p>
+            <a href="contact.html" class="btn-primary">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Video Editing</h3>
+                <p>Professional post-production, motion graphics, and short-form content creation.</p>
+            </div>
+            <div class="service-card">
+                <h3>Graphic Design</h3>
+                <p>Branding, logos, custom typography, and digital artwork design.</p>
+            </div>
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Modern, responsive website design built for performance and modern web standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Umar Studio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle mobile navigation menu
+        const menuBtn = document.getElementById('menu-btn');
+        const navbar = document.getElementById('navbar');
+
+        menuBtn.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

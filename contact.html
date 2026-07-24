@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Umar Studio</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h4>Umar</h4>
+            <h2>Studio</h2>
+        </div>
+        <div class="menu-btn" id="menu-btn">☰</div>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <h1>CONTACT UMAR STUDIO</h1>
+        <p>Let's Connect and Build Something Amazing Together</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>
+                We'd love to hear from you! Whether you need a website,
+                graphic design, video editing, or any creative service,
+                feel free to contact us.
+            </p>
+
+            <div class="info-box">
+                <h3>📧 Email</h3>
+                <p>
+                    <a href="mailto:ak7178975@gmail.com">
+                        ak7178975@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3>💬 WhatsApp</h3>
+                <p>
+                    <a href="https://wa.me/923480464617" target="_blank">
+                        +92 348 0464617
+                    </a>
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3>🌍 Location</h3>
+                <p>Gohati, Tehsil & district Swabi, Khyber Pakhtunkhwa, Pakistan</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="03ce8c98-427a-42f1-a2ef-b967c2fa53d8">
+                <input type="hidden" name="subject" value="New Message from Umar Studio Website">
+                <input type="hidden" name="botcheck" value="false">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="topic" placeholder="Subject" required>
+                <textarea name="message" placeholder="Write your message..." rows="6" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <p id="result"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="contact-footer">
+        <h2>Let's Work Together</h2>
+        <p>Have a project in mind? Contact Umar Studio today and let's bring your ideas to life.</p>
+        <a href="https://wa.me/923480464617" target="_blank" class="contact-btn">
+            Chat on WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Umar Studio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById("menu-btn");
+        const navbar = document.getElementById("navbar");
+
+        menuBtn.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+        });
+
+        // Web3Forms Submit Script
+        const form = document.querySelector("form");
+        const result = document.getElementById("result");
+
+        form.addEventListener("submit", async function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            result.innerHTML = "Sending...";
+
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                result.innerHTML = "✅ Thank you! Your message has been sent successfully.";
+                result.style.color = "green";
+                form.reset();
+            } else {
+                result.innerHTML = "❌ Something went wrong. Please try again.";
+                result.style.color = "red";
+            }
+        });
+    </script>
+</body>
+</html>
