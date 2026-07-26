@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+
+  <!-- Your Homepage -->
+  <url>
+    <loc>https://github.io</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Your About Page (Delete if you do not have this page) -->
+  <url>
+    <loc>https://github.ioabout.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Your Contact Page (Delete if you do not have this page) -->
+  <url>
+    <loc>https://github.iocontact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
