@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://sitemaps.org">
-
-  <!-- Your Homepage -->
+  <url>
+    <loc>https://umarstudio1.github.io/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
   <url>
     <loc>https://github.io1</loc>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
-
-  <!-- Your About Page (Delete if you do not have this page) -->
   <url>
-    <loc>https://github.io1about.html</loc>
+    <loc>https://github.io2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Your Contact Page (Delete if you do not have this page) -->
-  <url>
-    <loc>https://github.io1contact.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
 </urlset>
