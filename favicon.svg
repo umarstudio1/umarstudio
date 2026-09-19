@@ -11,7 +11,7 @@
   </defs>
 
   <!-- Dark Card Base -->
-  <rect width="448" height="448" rx="120" fill="#09090b"/>
+  <rect width="512" height="512" rx="120" fill="#09090b"/>
   
   <g stroke-linecap="square">
     <!-- Minimalist 'U' -->
